@@ -1,53 +1,76 @@
-/* Estilo global */
+/* Reseteo de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2; /* Fondo gris claro */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
-/* Estilo del encabezado */
+
+/* Encabezado */
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
 }
-.titulo-sitio {
-    color: #2f4f7f; /* Azul oscuro */
-    margin: 0;
+
+header h1 {
+    margin-bottom: 0.5rem;
 }
-/* Estilo del menú de navegación */
-nav {
-    margin-top: 10px;
-}
-.menu {
+
+nav ul {
     list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
 }
-.menu li {
-    margin: 0 15px;
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
-.menu li a {
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #2f4f7f; /* Azul oscuro */
-    font-weight: bold;
 }
-.menu li a:hover {
+
+nav ul li a:hover {
     text-decoration: underline;
 }
-/* Estilo de la sección de contenido */
-.contenido {
-    padding: 20px;
+
+/* Sección principal */
+main {
+    padding: 2rem;
+}
+
+/* Sección de introducción */
+.intro {
+    margin-bottom: 2rem;
+}
+
+.intro h2 {
+    color: #333;
+}
+
+/* Sección de contenido */
+.content {
+    margin-top: 2rem;
+}
+
+.content h2 {
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-}
-.contenido h2 {
-    color: #000; /* Negro */
-    margin-bottom: 10px;
-}
-.contenido p {
-    color: #000; /* Negro */
-    line-height: 1.5;
+    padding: 1rem;
+    margin-top: 2rem;
 }
