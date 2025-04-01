@@ -1,0 +1,53 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Fondo gris claro */
+}
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.titulo-sitio {
+    color: #2f4f7f; /* Azul oscuro */
+    margin: 0;
+}
+/* Estilo del menú de navegación */
+nav {
+    margin-top: 10px;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #2f4f7f; /* Azul oscuro */
+    font-weight: bold;
+}
+.menu li a:hover {
+    text-decoration: underline;
+}
+/* Estilo de la sección de contenido */
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+.contenido h2 {
+    color: #000; /* Negro */
+    margin-bottom: 10px;
+}
+.contenido p {
+    color: #000; /* Negro */
+    line-height: 1.5;
+}
