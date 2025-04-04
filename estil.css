@@ -69,7 +69,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0a3cff;
+    background-color: #2d3047;
     z-index: -1;
     transform: scaleX(0);
     transform-origin: left;
@@ -156,7 +156,7 @@ nav {
     transform: scaleX(0);
     width: 100%;
     height: 100%;
-    background-color: #0a3cff;
+    background-color: #2d3047;
     z-index: -1;
     transform-origin: left;
     transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
@@ -195,7 +195,7 @@ main {
 }
 /* Pie de página */
 footer {
-    background-color: #333;
+    background-color: #2d3047;
     color: #fff;
     text-align: center;
     padding: 1rem;
