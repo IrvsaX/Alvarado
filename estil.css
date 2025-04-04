@@ -34,7 +34,7 @@ nav {
 .menu {
     font-size: 16px;
     line-height: 1.6;
-    color: #000000;
+    color: #ffffff;
     width: fit-content;
     display: flex;
     list-style: none;
@@ -112,7 +112,7 @@ nav {
     transform: translateY(0);
     pointer-events: auto;
     border-top: transparent;
-    border-color: #0a3cff;
+    border-color: #2d3047;
 }
 
 .menu .item:hover .link {
