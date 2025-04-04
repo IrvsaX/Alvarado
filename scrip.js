@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let submenu = document.querySelector(".submenu a"); 
-    let submenuContent = document.querySelector(".submenu-content"); 
+document.addEventListener("DOMContentLoaded", function () {
+    const submenu = document.querySelector(".submenu > a");
+    const submenuContent = document.querySelector(".submenu-content");
 
-    submenu.addEventListener("click", function(event) {
-        event.preventDefault(); 
+    submenu.addEventListener("click", function (e) {
+        e.preventDefault();
         submenuContent.style.display = submenuContent.style.display === "block" ? "none" : "block";
     });
 
-    document.addEventListener("click", function(event) {
-        if (!submenu.contains(event.target) && !submenuContent.contains(event.target)) {
+    document.addEventListener("click", function (e) {
+        if (!submenu.contains(e.target) && !submenuContent.contains(e.target)) {
             submenuContent.style.display = "none";
         }
     });
