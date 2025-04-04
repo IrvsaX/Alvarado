@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página</title>
+    <title>Pagina</title>
     <link rel="stylesheet" href="estil.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido</h1>
-        <nav class="menu">
-            <li>
-                <li class="submenu">
-                 <a href="#">Inicio</a>
-                 <ul class="submenu-content">
-                     <li><a href="#">Servicios</a></li>
-                     <li><a href="#">Contacto</a></li>
-                   </ul>
-                </li>
-            </ul>
-        </nav>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Tu fuente de información y servicios</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li class="submenu">
+                <a href="#">Servicios ▼</a>
+                <ul class="submenu-content">
+                    <li><a href="#">Diseño Web</a></li>
+                    <li><a href="#">Desarrollo</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="intro">
-            <h2>Acerca de esta página</h2>
-            <p>Este es mi sitio web profe</p>
+            <h2>Introducción</h2>
+            <p>Este es un sitio de ejemplo con un menú desplegable usando solo HTML y CSS. Aquí puedes agregar cualquier tipo de contenido que desees.</p>
         </section>
 
         <section class="content">
             <h2>Contenido Principal</h2>
-            <p>cristian es gay </p>
+            <p>Explora nuestros servicios, descubre más sobre lo que hacemos y no dudes en ponerte en contacto con nosotros.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
-    <script src="scrip.js"></script>
+
+    <script src="menu.js"></script>
 </body>
 </html>
