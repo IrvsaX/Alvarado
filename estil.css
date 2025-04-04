@@ -25,22 +25,68 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Menú de navegación */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
+    position: relative;
     margin-right: 15px;
 }
 
 nav ul li a {
+    display: block;
     color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
 nav ul li a:hover {
+    background-color: #555;
     text-decoration: underline;
+}
+
+/* Submenú */
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.submenu-content li {
+    width: 100%;
+}
+
+.submenu-content li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu-content li a:hover {
+    background-color: #666;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.submenu:hover .submenu-content {
+    display: block;
 }
 
 /* Sección principal */
@@ -72,5 +118,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 2rem;
 }
