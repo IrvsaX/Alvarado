@@ -68,6 +68,7 @@ body{
 
 .menu-icono {
     width: 25px;
+    border-radius: 6px;
 }
 
 .menu label {
