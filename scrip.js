@@ -21,3 +21,25 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+
+// Animación de desplazamiento suave al hacer clic en los enlaces
+function desplazamientoLento() {
+  const destino = document.getElementById("introduccion1").offsetTop;
+  const inicio = window.scrollY;
+  const duracion = 750; // Duración en milisegundos (más alto = más lento)
+  const tiempoInicio = performance.now();
+  
+  function animarScroll(tiempoActual) {
+      const tiempoTranscurrido = tiempoActual - tiempoInicio;
+      const progreso = Math.min(tiempoTranscurrido / duracion, 1);
+      const posicion = inicio + (destino - inicio) * progreso;
+
+      window.scrollTo(0, posicion);
+
+      if (progreso < 1) {
+          requestAnimationFrame(animarScroll);
+      }
+  }
+
+  requestAnimationFrame(animarScroll);
+}
