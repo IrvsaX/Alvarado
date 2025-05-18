@@ -25,6 +25,6 @@ faders.forEach(fader => {
 // funcion de enlaces
 function desplazamientoLento() {
     setTimeout(() => {
-        window.location.href = "indexo.html";
+        window.location.href = "Pagina.html";
     }, 75); // Espera 75ms
 }
