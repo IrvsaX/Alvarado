@@ -1,0 +1,475 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #121212;
+    scroll-behavior: smooth;
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.header {
+    background-image: linear-gradient( rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)),
+        url(WPT.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     transition: background-image 1s ease-in-out; /* Fade suave */
+}
+
+.header2 {
+    background-image: linear-gradient( rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)),
+        url(F1Mon.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     transition: background-image 1s ease-in-out; /* Fade suave */
+}
+
+.header3 {
+    background-image: linear-gradient( rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)),
+        url(Golf2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     transition: background-image 1s ease-in-out; /* Fade suave */
+}
+
+.header4 {
+    background-image: linear-gradient( rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)),
+        url(FondTenis.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     transition: background-image 1s ease-in-out; /* Fade suave */
+}
+
+.header5 {
+    background-image: linear-gradient( rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)),
+        url(FonEqui.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     transition: background-image 1s ease-in-out; /* Fade suave */
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 100;
+}
+
+.logo {
+    color: #c7c7c7;
+    font-size: 22px;
+    font-weight: 650;
+}
+
+.menu .navbar ul {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    color: #c7c7c7;
+    padding: 15px;
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.menu .navbar ul li a:hover {
+    color: #40586e;
+    transition: 0.5s;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    border-radius: 6px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-size: 40px;
+    line-height: 120px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: azure;
+    padding: 0 250px;
+    margin-bottom: 45px;
+}
+
+/* BOTTONES */
+
+.btn-1 {
+  padding: 12px 25px;
+  border-radius: 17px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.8s ease;
+   position: absolute;
+    top: 75%;
+    left: 44%;
+}
+
+.btn-1:hover {
+    background-color: #1A252F;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.btn-container {
+    position: relative;
+    height: 100vh; /* Ajusta según necesites */
+}
+
+
+.btn-2 {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #c7c7c7; /* Color elegante */
+    color: #121212; /* Texto oscuro para contraste */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado */
+    transition: all 0.3s ease-in-out;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn-2:hover {
+    background-color: #40586e; /* Color más intenso al pasar el mouse */
+    color: white;
+    transform: scale(1.05); /* Pequeño efecto de crecimiento */
+}
+
+/* Cartas */
+.legends {
+    padding: 100px 20px;
+    background-color: #121212;
+    color: #c7c7c7;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas */
+    gap: 35px; /* Espacio entre tarjetas */
+}
+
+.legend-card {
+    background-color: #1A252F;
+    border-radius: 10px;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Tamaño fijo en pantallas grandes */
+    max-width: 100%;
+}
+
+.legend-card:hover {
+    transform: scale(1.05);
+}
+
+.legend-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.legends h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.legend-card h3 {
+    margin-top: 15px;
+    color: #c7c7c7;
+}
+
+.legend-card p {
+    font-size: 16px;
+    color: #c7c7c7;
+    margin-top: 35px;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #000000;
+    padding: 60px 20px;
+    color: rgb(126, 126, 126);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 30%;
+}
+
+.link h3 {
+    margin-bottom: 15px;
+    color: #a0a0a0;
+}
+
+.link ul li a {
+    color: #696969;
+    font-size: 14px;
+}
+
+.link ul li a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 30%;
+}
+
+/*Animacion de las letras al bajar */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 📌 Media Queries para Pantallas Grandes (1024px) */
+@media (max-width: 1024px) {
+    .header-content h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .header-content p {
+        padding: 0 80px;
+    }
+
+    .legends {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* 📌 Media Queries para Tablets y Pantallas Medianas (768px) */
+@media (max-width: 768px) {
+    /* Menú hamburguesa */
+    .menu label {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #c7c7c7;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        padding: 15px;
+    }
+
+    /* Header responsivo */
+    .header {
+        height: 70vh;
+    }
+
+    .header-content h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .header-content p {
+        padding: 0 40px;
+        font-size: 18px;
+    }
+
+    /* Tarjetas en una columna */
+
+    .legends {
+        padding: 80px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px; /* Aumenta el espacio entre las tarjetas */
+    }
+
+    .legends h2 {
+        font-size: 28px;
+    }
+
+    .legend-card {
+        width: 100%;
+        max-width: 95%;
+        margin-bottom: 20px; /* Espacio extra entre tarjetas */
+           padding: 30px;
+    }
+
+    .legend-card h3 {
+        font-size: 18px;
+    }
+
+    .legend-card p {
+        font-size: 14px;
+    }
+
+    /* Botón centrado correctamente */
+    .btn-1 {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+          position: absolute;
+          top: 75%;
+          left: 33%;
+    }
+
+    /* Ajustes en Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* 📌 Media Queries para Móviles Pequeños (480px) */
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .header-content p {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        padding: 40px;
+    }
+
+     .legend-card h3 {
+        font-size: 16px;
+    }
+
+    .legend-card p {
+        font-size: 13px;
+    }
+}
