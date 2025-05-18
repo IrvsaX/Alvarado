@@ -25,6 +25,6 @@ faders.forEach(fader => {
 // funcion de enlaces
 function desplazamientoLento() {
     setTimeout(() => {
-        window.location.href = "Pagina.html";
+        window.location.href = "https://irvsax.github.io/Alvarado/Pagina";
     }, 75); // Espera 75ms
 }
