@@ -1,25 +1,25 @@
-const faders = document.querySelectorAll('.fade-in');
+document.addEventListener("DOMContentLoaded", () => {
+    const faders = document.querySelectorAll('.fade-in');
 
-const appearOptions = {
-  threshold: 0.2, // El 30% del elemento debe ser visible
-};
+    const appearOptions = {
+        threshold: 0.2,
+    };
 
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-  entries.forEach((entry, index) => {
-    if (!entry.isIntersecting) return;
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach((entry, index) => {
+            if (!entry.isIntersecting) return;
 
-    // Agregamos delay usando setTimeout
-    setTimeout(() => {
-      entry.target.classList.add('show'); // Agrega la clase 'show' para animar
-    }, index * 150); // Cada elemento se retrasa 150ms respecto al anterior
+            setTimeout(() => {
+                entry.target.classList.add('show');
+            }, index * 150);
 
-    observer.unobserve(entry.target); // Deja de observar para no repetir
-  });
-}, appearOptions);
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
 
-// Activamos el observer
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
 });
 
 // Animación de desplazamiento suave al hacer clic en los enlaces
