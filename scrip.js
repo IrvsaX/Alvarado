@@ -1,7 +1,7 @@
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
-  threshold: 0.3, // El 30% del elemento debe ser visible
+  threshold: 0.2, // El 30% del elemento debe ser visible
 };
 
 const appearOnScroll = new IntersectionObserver(function(entries, observer) {
