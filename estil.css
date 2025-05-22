@@ -11,7 +11,7 @@ html, body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #121212;
     scroll-behavior: smooth;
     transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
@@ -68,9 +68,9 @@ html, body {
 }
 
 .logo {
-    color: #c7c7c7;
+    color: #FFFFFF;
     font-size: 22px;
-    font-weight: 650;
+    font-weight: 12;
 }
 
 .menu .navbar ul {
@@ -83,15 +83,16 @@ html, body {
 }
 
 .menu .navbar ul li a {
-    color: #c7c7c7;
+    color:  #E0EEEF;
     padding: 15px;
     display: block;
     font-size: 19px;
     font-weight: 500;
+    transition: color 0.3s;
 }
 
 .menu .navbar ul li a:hover {
-    color: #40586e;
+    color: #547EA8;
     transition: 0.5s;
 }
 
@@ -119,14 +120,15 @@ html, body {
 .header-content h1 {
     font-size: 40px;
     line-height: 120px;
-    color: #f9fafc;
+    color: #E0E0E0;
     text-transform: uppercase;
     margin-bottom: 35px;
 }
 
 .header-content p {
     font-size: 20px;
-    color: azure;
+    color: #BBBBBB;
+    line-height: 1.3;
     padding: 0 250px;
     margin-bottom: 45px;
 }
@@ -134,116 +136,43 @@ html, body {
 /* BOTTONES */
 
 .btn-1 {
+  display: inline-block;
   padding: 12px 25px;
-  border-radius: 17px;
+  border-radius: 12px;
   cursor: pointer;
-  border: 0;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  background-color: #E0EEEF;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.8s ease;
+  font-size: 16px;
+  transition: all 0.8s ease-in-out;
+  color: #121212;
+  font-weight: bold;
+  border: none;
 }
 
 .btn-1:hover {
-    background-color: #1A252F;
+    background-color: #19386F;
     color: #ffffff;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .btn-2 {
     display: inline-block;
-    padding: 12px 24px;
-    border-radius: 8px;
-    background-color: #c7c7c7; /* Color elegante */
-    color: #121212; /* Texto oscuro para contraste */
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: #E0EEEF;
+    color: #121212;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none; /* Quitar subrayado */
     transition: all 0.3s ease-in-out;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-2:hover {
-    background-color: #40586e; /* Color más intenso al pasar el mouse */
-    color: white;
-    transform: scale(1.05); /* Pequeño efecto de crecimiento */
-}
-
-/* INTRO SECTION */
-.intro-grup {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.intro-1 {
-    position: relative;
-    flex: 1 1 30%; /* Mantiene el tamaño del recuadro */
-    max-width: 350px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
-    margin: 0 auto;
-    background-color: #1A252F; /* Color de fondo elegante */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px; /* Espaciado interno */
-    text-decoration: none; /* Sin subrayado */
-}
-
-.intro-1 h3 {
-    position: relative; /* Mantener centrado */
-    opacity: 1; /* Siempre visible */
-    transform: translateY(0);
-     transition: all 0.8s ease-in-out;
-    color: #c7c7c7;
-    text-align: center;
-    font-size: 20px;
-}
-
-.intro-1 p {
-    position: relative;
-    opacity: 0; /* Inicialmente oculto */
-    transform: translateX(30px); /* Lo movemos 30px a la derecha */
-    transition: all 0.8s ease-in-out;
-    color: #c7c7c7;
-    text-align: center;
-    font-size: 15px;
-}
-
-.intro-1:hover h3{
-    opacity: 0;
-    position: relative;
-    transform: translateX(-30px);
-     transition: all 0.5s ease-in-out;
-}
-
-.intro-1:hover p {
-    opacity: 1; /* Aparece con hover */
-    transform: translateY(0);
-}
-.intro {
-    height: 100vh; /* Igualar la altura al hero */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #121212;
-    color: #c7c7c7;
-}
-
-.intro-container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
+    background-color: #19386F;
+    color: #ffffff;
+    transition: 0.7s;
 }
 
 /* Cardss*/
