@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const faders = document.querySelectorAll('.fade-in');
 
     const appearOptions = {
-        threshold: 0.3,
+        threshold: 0.2,
     };
 
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
@@ -25,6 +25,27 @@ document.addEventListener("DOMContentLoaded", () => {
 // Animación de desplazamiento suave al hacer clic en los enlaces
 function desplazamientoLento() {
   const destino = document.getElementById("informa").offsetTop;
+  const inicio = window.scrollY;
+  const duracion = 750; // Duración en milisegundos (más alto = más lento)
+  const tiempoInicio = performance.now();
+  
+  function animarScroll(tiempoActual) {
+      const tiempoTranscurrido = tiempoActual - tiempoInicio;
+      const progreso = Math.min(tiempoTranscurrido / duracion, 1);
+      const posicion = inicio + (destino - inicio) * progreso;
+
+      window.scrollTo(0, posicion);
+
+      if (progreso < 1) {
+          requestAnimationFrame(animarScroll);
+      }
+  }
+
+  requestAnimationFrame(animarScroll);
+}
+
+function desplazamientoLento2() {
+  const destino = document.getElementById("cartas").offsetTop;
   const inicio = window.scrollY;
   const duracion = 750; // Duración en milisegundos (más alto = más lento)
   const tiempoInicio = performance.now();
