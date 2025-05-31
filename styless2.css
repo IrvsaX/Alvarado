@@ -414,7 +414,7 @@ html, body {
 .half p {
   text-align: center;
   color: #c7c7c7;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   padding: 0 40px;
   line-height: 30px;
@@ -428,7 +428,7 @@ html, body {
 
 .half ul li {
   color: #c7c7c7;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   padding: 8px 0;
   text-align: center;
