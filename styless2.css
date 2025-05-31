@@ -175,6 +175,24 @@ html, body {
     margin-bottom: 45px;
 }
 
+/*Titulo secundario */
+
+.subtitulo {
+    text-align: center;
+    width: 100%;
+    height: 125px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.subtitulo h1 {
+    font-size: 40px;
+    line-height: 220px;
+    color: #E0E0E0;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
 /* BOTTONES */
 
 .btn-1 {
@@ -219,6 +237,12 @@ html, body {
     gap: 35px; /* Espacio entre tarjetas */
 }
 
+.legends h1 {
+    font-size: 36px;
+    color: #c7c7c7;
+    margin-top: 35px;
+}
+
 .legend-card {
     background-color: #1A252F;
     border-radius: 10px;
@@ -244,7 +268,6 @@ html, body {
     text-align: center;
     margin-bottom: 20px;
 }
-
 
 .legend-card h3 {
     margin-top: 15px;
@@ -321,6 +344,8 @@ html, body {
     margin: 50px auto;
     padding: 0 20px;
     max-width: 1200px;
+    margin-bottom: 150px;
+    margin-top: 150px;
 }
 
 .video-section h2 {
@@ -357,6 +382,56 @@ html, body {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Secciones a mitad de pantalla */
+.half-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 40px; /* Espacio entre columnas */
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+/* Cada columna ocupa aproximadamente la mitad en escritorio */
+.half {
+  flex: 1 1 45%;
+  max-width: 45%;
+  box-sizing: border-box;
+}
+
+/* Títulos y textos centrados */
+.half h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #c7c7c7;
+  margin-top: 60px;
+}
+
+.half p {
+  text-align: center;
+  color: #c7c7c7;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 40px;
+  line-height: 30px;
+}
+
+/* Lista ordenada en columna */
+.half ul {
+  list-style: none;
+  padding: 0;
+}
+
+.half ul li {
+  color: #c7c7c7;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-align: center;
 }
 
 /* 📌 Media Queries para Pantallas Grandes (1024px) */
@@ -470,6 +545,32 @@ html, body {
         flex-direction: column;
         text-align: center;
     }
+
+    /*Titulo secundario */
+
+    .subtitulo {
+     width: 100%;
+     height: 50px;
+     margin: 40px auto;
+     padding: 0 70px;
+    }
+
+    .subtitulo h1 {
+     font-size: 25px;
+     line-height: 40px;
+     margin-bottom: 15px;
+    }
+
+    /* Secciones a mitad de pantalla */
+    .half {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .half p {
+    padding: 0 20px;
+  }
 }
 
 /* 📌 Media Queries para Móviles Pequeños (480px) */
