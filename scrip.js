@@ -65,6 +65,27 @@ function desplazamientoLento2() {
   requestAnimationFrame(animarScroll);
 }
 
+function desplazamientoLento3() {
+  const destino = document.getElementById("formulario-coment").offsetTop;
+  const inicio = window.scrollY;
+  const duracion = 750; // Duración en milisegundos (más alto = más lento)
+  const tiempoInicio = performance.now();
+  
+  function animarScroll(tiempoActual) {
+      const tiempoTranscurrido = tiempoActual - tiempoInicio;
+      const progreso = Math.min(tiempoTranscurrido / duracion, 1);
+      const posicion = inicio + (destino - inicio) * progreso;
+
+      window.scrollTo(0, posicion);
+
+      if (progreso < 1) {
+          requestAnimationFrame(animarScroll);
+      }
+  }
+
+  requestAnimationFrame(animarScroll);
+}
+
 // Agregar el evento de cambio de color de fondo y texto al hacer scroll
 
 gsap.registerPlugin(ScrollTrigger);
@@ -99,11 +120,4 @@ secciones.forEach((seccion) => {
             });
         }
     });
-});
-
-gsap.from(".blog-1", { 
-    opacity: 0, 
-    y: 30, 
-    duration: 0.8, 
-    stagger: 0.2 
 });
