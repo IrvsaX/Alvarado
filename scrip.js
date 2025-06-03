@@ -121,3 +121,14 @@ secciones.forEach((seccion) => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form"); // Busca el formulario
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Previene el envío inmediato
+        setTimeout(() => {
+            window.location.href = "https://irvsax.github.io/Alvarado/Comentarios.html"; // Redirige manualmente
+        }, 500); // Espera medio segundo antes de la redirección
+        form.submit(); // Ahora envía el formulario
+    });
+});
